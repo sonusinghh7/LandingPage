@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.219);
+    position: absolute;
+}
+
+.logo img{  
+    width: 10%;
+    margin: 5px 20px;
+    padding: 0px 5px;
+    height: 60px;
+    display: flex;
+    float: left;   
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin: 10px 50px;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.menu li a{
+    color: #3a6d8c ;
+    font-weight: 200;
+}
+
+.main{
+    height: 96vh;
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+}
+
+.left h2{
+    font-size: 50px;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+}
+
+#farmerTxt{
+    /* color:#3a6d8c ; */
+    animation: colorChange 3s infinite alternate;
+}
+
+.msg{
+    width: 90%; 
+    height: 170px;  
+    margin-left: 25px;
+    margin-top: 150px;
+    display: flex;
+    cursor: default;
+}
+
+.btn{
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    
+}
+
+.txt{
+    margin-left: 50px;
+    height: 150px;
+    width: 500px;
+}
+
+button{
+    color: whitesmoke;
+    border: none;
+    background-color: #3a6d8c ;
+    font-size: 25px;
+    padding: 5px;
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.right{
+    height: 100%;
+    width: 60%;
+    display: flex;
+}
+
+.right img{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.devName{
+    padding: 10px;
+    height: 50px;
+    width: 190px;
+    position: fixed;
+    right: 0;
+    top: 90vmin;
+    margin: 10px 20px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #3a6d8c;
+}
+/* #names{
+    color: green;
+} */
+
+/* Hover section */
+
+.left h2 span:hover{
+    border-bottom: 3.5px solid #3a6d8c;
+    border-radius: 2px;
+    cursor: default;
+   
+}
+
+
+@keyframes colorChange {
+    0% {color: #3a6d8c; }
+    50% {color: #c48129; }
+    100% {color: green; }
+}
